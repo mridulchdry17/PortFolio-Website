@@ -3,210 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mridul - Data Scientist</title>
+    <title>Mridul | Data Scientist & AI Enthusiast</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <div class="logo">Mridul</div>
+    <nav class="main-navbar">
+        <div class="nav-logo">Mridul</div>
         <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Hello, I'm <span class="highlight">Mridul</span></h1>
-            <div class="typing-text">
-                <span>Machine Learning Engineer||</span>
-                <span>Data Scientist ||</span>
-                <span>AI Enthusiast</span>
-            </div>
-            <div class="social-links">
-                <a href="https://github.com/mridulchdry17" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/mridulchdry" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://x.com/Mridulchdry" title="X"><i class="fab fa-twitter"></i></a>
+    <section class="hero-section">
+        <div id="particles-js" class="hero-bg-animated"></div>
+        <div class="hero-card">
+            <h1>Hello, I'm <span class="hero-highlight">Mridul</span></h1>
+            <p class="hero-tagline">Machine Learning Engineer | Data Scientist | AI Enthusiast</p>
+            <div class="hero-socials">
+                <a href="https://github.com/mridulchdry17" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mridulchdry" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/Mridulchdry" target="_blank" title="X"><i class="fab fa-twitter"></i></a>
             </div>
         </div>
     </section>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <img src="image.jpg" alt="Mridul">
-            <div class="about-text">
-                <p>Machine Learning and Deep Learning enthusiast with hands-on experience in LSTMs, CNNs, and real-world forecasting tasks. Passionate about building AI-driven solutions, from language modeling to time-series prediction, with a focus on optimization and deploymen</p>
-                <a href="Mridul_Machine_Learning.pdf" class="btn">Download CV</a>
+    <main>
+        <section id="about" class="minimal-section about-with-image">
+            <h2>About Me</h2>
+            <div class="about-content-wrapper">
+                <img src="assets/images/my_photo.jpg" alt="Mridul Profile" class="about-profile-pic">
+                <div class="about-text-content">
+                    <p>I am Mridul, a passionate Data Science student and AI enthusiast with hands-on experience in Machine Learning and Deep Learning. I love building AI-driven solutions, from language modeling to time-series prediction, and enjoy working on real-world forecasting and optimization tasks.</p>
+                    <a href="resumemridul.pdf" class="btn-resume" target="_blank"><i class="fas fa-download"></i> Download Resume</a>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <section id="skills">
-        <h2>My Skills</h2>
-        <div class="skills-container">
-            <div class="skill-category">
-                <h3>Data Science & ML</h3>
-                <div class="skills-grid">
-                    <div class="skill-item">
-                        <i class="fab fa-python"></i>
-                        <span>Python</span>
+        </section>
+        <section id="experience" class="minimal-section">
+            <h2>Experience</h2>
+            <div class="experience-entry">
+                <img src="assets/images/adopt_ai.png" alt="Adopt.ai Logo" class="company-logo">
+                <div>
+                    <h3>AI Intern <span class="company-name">@ Adopt.ai</span></h3>
+                    <span class="exp-date">June 2025 – Present</span>
+                    <p>Working on AI-driven projects, contributing to model development and deployment in real-world applications.</p>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="minimal-section">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li><i class="fab fa-python"></i> Python</li>
+                <li><img src="assets/images/tensorflow-logo.jpg" alt="TensorFlow"> TensorFlow</li>
+                <li><img src="assets/images/sklearn-logo.jpg" alt="Scikit-learn"> Scikit-learn</li>
+                <li><img src="assets/images/xgboost-logo.jpg" alt="XGBoost"> XGBoost</li>
+                <li><img src="assets/images/pandas-logo.webp" alt="Pandas"> Pandas</li>
+                <li><img src="assets/images/numpy-logo.png" alt="NumPy"> NumPy</li>
+                <li><img src="assets/images/matplotlib-logo.jpg" alt="Matplotlib"> Matplotlib</li>
+                <li><img src="assets/images/seaborn-logo.jpg" alt="Seaborn"> Seaborn</li>
+                <li><img src="assets/images/opencv-logo.png" alt="OpenCV"> OpenCV</li>
+                <li><img src="assets/images/yolo-logo.jpg" alt="YOLO"> YOLO</li>
+                <li><img src="assets/images/flask-logo.png" alt="Flask"> Flask</li>
+            </ul>
+        </section>
+        <section id="projects" class="minimal-section">
+            <h2>My Projects</h2>
+            <div class="project-list">
+                <div class="project-item">
+                    <img src="assets/images/Youtube2blog.png" alt="Youtube2Blog">
+                    <h3>Youtube2Blog Generator</h3>
+                    <p>Built an AI-powered system that converts YouTube video Links into structured blog content using multi-agent pipelines for title, summary, and conclusion generation.</p>
+                    <div class="project-item-links">
+                        <a href="https://github.com/mridulchdry17/Youtube-Blog-Generator" target="_blank" class="btn-project-github">GitHub</a>
+                        <a href="https://youtube2blog-gmie.onrender.com/" target="_blank" class="btn-project-live">View Live</a>
                     </div>
-                    <div class="skill-item">
-                        <img src="NLP-logo.png" alt="NLP-logo">
-                        <span>NLP</span>
+                </div>
+                <div class="project-item">
+                    <img src="assets/images/temperatur-forecasting.jpg" alt="Temperature Forecasting">
+                    <h3>Temperature Forecasting</h3>
+                    <p>Processed temperature data and improved forecasting with LSTM, achieving a 5.72% improvement over baseline models.</p>
+                    <div class="project-item-links">
+                        <a href="https://github.com/mridulchdry17/Temperature_forecasting" target="_blank" class="btn-project-github">GitHub</a>
                     </div>
-                    
-                    <div class="skill-item">
-                        <img src="tensorflow-logo.jpg" alt="TensorFlow">
-                        <span>TensorFlow</span>
+                </div>
+                <div class="project-item">
+                    <img src="assets/images/Language Model.jpg" alt="Language Model">
+                    <h3>Language Model</h3>
+                    <p>Developed an LSTM-based language model on email data for generating coherent email-like text. Built a text generation pipeline and optimized with embedding layers and dropout.</p>
+                    <div class="project-item-links">
+                        <a href="https://github.com/mridulchdry17/Language-model-from-scratch" target="_blank" class="btn-project-github">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="assets/images/fitu.jpg" alt="FIT-U Project">
+                    <h3>FIT-U: AI Fitness Assistant</h3>
+                    <p>AI-powered fitness app using computer vision and pose estimation to track exercises in real-time.</p>
+                    <div class="project-item-links">
+                        <a href="https://github.com/mridulchdry17/FIT-U" target="_blank" class="btn-project-github">GitHub</a>
+                        <a href="https://fit-u.onrender.com/" target="_blank" class="btn-project-live">View Live</a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="assets/images/car-counter.jpg" alt="Car Counter">
+                    <h3>Car Counter Project</h3>
+                    <p>YOLOv8 and OpenCV-based vehicle detection and counting system for real-time video feeds.</p>
+                    <div class="project-item-links">
+                        <a href="https://github.com/mridulchdry17/Car-Counter-Project" target="_blank" class="btn-project-github">GitHub</a>
+                        <a href="car-counter-demo.mp4" target="_blank" class="btn-project-live">View Demo</a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="assets/images/new-york-taxi.jpg" alt="NYC Taxi Fare Prediction">
+                    <h3>NYC Taxi Fare Prediction</h3>
+                    <p>Predicted NYC taxi fares using XGBoost, reducing RMSE to $3.22 while maintaining high accuracy.</p>
+                    <div class="project-item-links">
+                        <a href="https://github.com/mridulchdry17/New-York-City-Taxi-Fare-Prediction" target="_blank" class="btn-project-github">GitHub</a>
+                        <a href="https://taxi-fare-predict.streamlit.app/" target="_blank" class="btn-project-live">View Live</a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="assets/images/mushroom.jpg" alt="Mushroom Classification">
+                    <h3>Binary Prediction of Poisonous Mushrooms</h3>
+                    <p>Classified mushrooms as edible or poisonous using XGBoost, achieving an MCC of 98.3%.</p>
+                    <div class="project-item-links">
+                        <a href="https://github.com/mridulchdry17/Binary-Prediction-of-Poisonous-Mushrooms" target="_blank" class="btn-project-github">GitHub</a>
+                        <a href="https://www.kaggle.com/code/mridulchdry17/xgboost-98-378" target="_blank" class="btn-project-live">View Data</a>
                     </div>
                 </div>
             </div>
-
-            <div class="skill-category">
-                <h3>Computer Vision</h3>
-                <div class="skills-grid">
-                    <div class="skill-item">
-                        <img src="opencv-logo.png" alt="OpenCV">
-                        <span>OpenCV</span>
-                    </div>
-                    <div class="skill-item">
-                        <img src="yolo-logo.jpg" alt="YOLO">
-                        <span>YOLO</span>
-                    </div>
-                </div>
+        </section>
+        <section id="contact" class="minimal-section">
+            <h2>Contact</h2>
+            <p>Feel free to reach out via email or connect on social media!</p>
+            <div class="contact-links">
+                <a href="mailto:mridul7chaudhary@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://github.com/mridulchdry17" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/mridulchdry" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://x.com/Mridulchdry" target="_blank"><i class="fab fa-twitter"></i> X (Twitter)</a>
             </div>
-
-            <div class="skill-category">
-                <h3>Visualization & Analysis</h3>
-                <div class="skills-grid">
-                    <div class="skill-item">
-                        <img src="matplotlib-logo.jpg" alt="Matplotlib">
-                        <span>Matplotlib</span>
-                    </div>
-                    <div class="skill-item">
-                        <img src="seaborn-logo.jpg" alt="Seaborn">
-                        <span>Seaborn</span>
-                    </div>
-                    <div class="skill-item">
-                        <img src="numpy-logo.png" alt="NumPy">
-                        <span>NumPy</span>
-                    </div>
-                    <div class="skill-item">
-                        <img src="pandas-logo.webp" alt="Pandas">
-                        <span>Pandas</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3>ML Frameworks</h3>
-                <div class="skills-grid">
-                    <div class="skill-item">
-                        <img src="sklearn-logo.jpg" alt="Scikit-learn">
-                        <span>Scikit-learn</span>
-                    </div>
-                    <div class="skill-item">
-                        <img src="xgboost-logo.jpg" alt="XGBoost">
-                        <span>XGBoost</span>
-                    </div>
-                    <div class="skill-item">
-                        <img src="lightgbm-logo.png" alt="LightGBM">
-                        <span>LightGBM</span>
-                    </div>
-                    <div class="skill-item">
-                        <img src="flask-logo.png" alt="Flask">
-                        <span>Flask</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <img src="Language Model.jpg" alt="Language Model">
-                <h3>Language Model</h3>
-                <p>Developed an LSTM-based language model on email data for generating coherent email-like text. Extracted emails via IMAP, preprocessed, tokenized, and trained a stacked LSTM model. Built a text generation pipeline predicting words from a seed phrase. Optimized with embedding layers, dropout, and softmax for improved performance.</p>
-                <div class="project-links">
-                    <a href="https://github.com/mridulchdry17/Language-model-from-scratch" class="btn" target="_blank">View Project</a>
-                    <a href="https://github.com/mridulchdry17/Language-model-from-scratch" class="btn-outline" target="_blank">GitHub</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="temperatur-forecasting.jpg" alt="Temprature-Forecasting">
-                <h3>Temperature Forecasting</h3>
-                <p>Processed temperature data at 10-minute intervals (1,440 points over 10 days) for training and forecasting. Used a sliding window approach and baseline model (Test MAE: 2.62). Fully connected and CNN models failed. Improved forecasting with LSTM (Test MAE: 2.47), achieving a 5.72% improvement.</p>
-                <div class="project-links">
-                    <a href="https://github.com/mridulchdry17/Temperature_forecasting" class="btn" target="_blank">View Project</a>
-                    <a href="https://github.com/mridulchdry17/Temperature_forecasting" class="btn-outline" target="_blank">GitHub</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="fitu.jpg" alt="FIT-U Project">
-                <h3>FIT-U: Your AI-Powered Fitness Assistant</h3>
-                <p>Welcome to FIT-U, an AI-powered fitness application designed to make your workouts smarter, easier, and more effective. Hosted on Render, this app leverages computer vision and pose estimation to track your exercises in real-time.</p>
-                <div class="project-links">
-                    <a href="https://fit-u.onrender.com/" class="btn" target="_blank">View Project</a>
-                    <a href="https://github.com/mridulchdry17/FIT-U" class="btn-outline" target="_blank">GitHub</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="car-counter.jpg" alt="Car-Counter">
-                <h3>Car Counter Project</h3>
-                <p>This project uses YOLOv8 for object detection combined with OpenCV for video processing and SORT to track vehicles in real-time. The goal is to detect and count vehicles in a video feed.</p>
-                <div class="project-links">
-                    <a href="car-counter-demo.mp4" class="btn" target="_blank">View Project</a>
-                    <a href="https://github.com/mridulchdry17/Car-Counter-Project" class="btn-outline" target="_blank">GitHub</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="new-york-taxi.jpg" alt="New York Taxi">
-                <h3>NYC Taxi Fare Prediction</h3>
-                <p>This project focused on predicting NYC taxi fares using XGBoost, successfully reducing the RMSE to $3.22. Enhanced computational efficiency while maintaining high prediction accuracy.</p>
-                <div class="project-links">
-                    <a href="https://taxi-fare-predict.streamlit.app/" class="btn" target="_blank">View Project</a>
-                    <a href="https://github.com/mridulchdry17/New-York-City-Taxi-Fare-Prediction" class="btn-outline" target="_blank">GitHub</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="mushroom.jpg" alt="Mushroom">
-                <h3>Binary Prediction of Poisonous Mushrooms</h3>
-                <p>Predicting whether a mushroom is edible or poisonous based on physical characteristics. XGBoost achieved an exceptional MCC of 98.3%, showcasing its effectiveness in classification.</p>
-                <div class="project-links">
-                    <a href="https://www.kaggle.com/code/mridulchdry17/xgboost-98-378" class="btn" target="_blank">View Project</a>
-                    <a href="https://github.com/mridulchdry17/Binary-Prediction-of-Poisonous-Mushrooms" class="btn-outline" target="_blank">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Get in Touch</h2>
-        <div class="contact-content">
-            <form id="contact-form" action="https://formspree.io/f/xnnnobzp" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </div>
-    </section>
-
+        </section>
+    </main>
     <footer>
         <p>&copy; 2024 Mridul. All rights reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
+    <script src="assets/scripts/particles.js"></script>
 </body>
 </html> 
