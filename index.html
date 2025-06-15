@@ -11,6 +11,9 @@
 <body>
     <nav class="main-navbar">
         <div class="nav-logo">Mridul</div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
@@ -150,5 +153,28 @@
         <p>&copy; 2024 Mridul. All rights reserved.</p>
     </footer>
     <script src="assets/scripts/particles.js"></script>
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.main-navbar')) {
+                navLinks.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html> 

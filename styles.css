@@ -1,9 +1,16 @@
+html,
 body {
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    width: 100%; /* Ensure width is contained */
     font-family: 'Poppins', sans-serif;
     background: #f7fafd;
     color: #222;
     margin: 0;
     padding: 0;
+}
+
+* {
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
 .main-navbar {
@@ -57,7 +64,7 @@ body {
 .hero-bg-animated {
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    width: 100vw;
+    width: 100%; /* Changed from 100vw to 100% to prevent overflow from scrollbars */
     height: 100%;
     background: linear-gradient(135deg, #012A4A 0%, #0077B6 50%, #00B4D8 100%); /* New gradient */
     z-index: 1;
@@ -388,10 +395,151 @@ footer {
     display: block !important; /* Ensure it takes up space */
 }
 
-@media (max-width: 900px) {
+/* Mobile Navigation */
+@media (max-width: 768px) {
     .main-navbar {
         padding: 0.7rem 1rem;
     }
+    
+    .nav-links {
+        display: none;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: #fff;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+    
+    .nav-links a {
+        padding: 0.5rem 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .hero-card {
+        padding: 1.5rem;
+        width: 90%;
+    }
+    
+    .hero-card h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-tagline {
+        font-size: 1rem;
+    }
+    
+    .hero-socials {
+        gap: 1.5rem;
+    }
+    
+    .about-content-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .about-profile-pic {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 1rem;
+    }
+    
+    .experience-entry {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .company-logo {
+        margin-bottom: 1rem;
+    }
+    
+    .skills-list {
+        justify-content: center;
+    }
+    
+    .project-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .contact-links a {
+        width: 100%;
+        text-align: center;
+    }
+    
+    #particles-js {
+        height: 100% !important;
+        width: 100% !important; /* Ensure particles.js also respects width */
+    }
+}
+
+/* Tablet Responsiveness */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .main-navbar {
+        padding: 0.7rem 1.5rem;
+    }
+    
+    .project-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .hero-card {
+        padding: 2rem;
+    }
+}
+
+/* Add hamburger menu button */
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #1a2a3a;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/* Improve touch targets on mobile */
+@media (max-width: 768px) {
+    .btn-resume,
+    .btn-project-github,
+    .btn-project-live,
+    .contact-links a {
+        padding: 0.8rem 1.2rem;
+        min-height: 44px;
+    }
+}
+
+/* Fix image sizes on mobile */
+@media (max-width: 768px) {
+    .project-item img {
+        height: 200px;
+    }
+    
+    .company-logo {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 900px) {
     .project-list {
         grid-template-columns: 1fr;
     }
